@@ -149,6 +149,7 @@ public class Game {
      * @return String indicating the outcome of the game: "X wins" or "O wins" or "Tie" or "None"
      */
     public String checkGameWinner(char [][]grid){
+        String result = "None";
         if((grid[0][0] == 'x' && grid[0][1] =='x' && grid[0][2] =='x')  || (grid[1][0] == 'x' && grid [1][1] =='x' && grid [1][2] =='x')|| (grid[2][0] == 'x' && grid [2][1] =='x' && grid [2][2] =='x') || (grid[0][0] == 'x' && grid [1][0] =='x' && grid [2][0] =='x')||(grid[0][1] == 'x' && grid [1][1] =='x' && grid [2][1] =='x')||(grid[0][2] == 'x' && grid [1][2] =='x' && grid [2][2] =='x')||(grid[0][0] == 'x' && grid [1][1] =='x' && grid [2][2] =='x')||(grid[2][0] == 'x' && grid [1][1] =='x' && grid [0][2] =='x')){
             result = "X wins";
 
